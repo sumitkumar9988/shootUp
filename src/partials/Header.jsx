@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../images/logo.png";
+import Logo from "../images/logo.jpg";
 
 function Header() {
   const [top, setTop] = useState(true);
@@ -20,7 +20,7 @@ function Header() {
         !top && "bg-white backdrop-blur-sm shadow-lg"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-5 sm:px-6">
+      <div className="max-w-6xl px-5 mx-auto sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Site branding */}
           <div className="flex-shrink-0 mr-4">
@@ -38,18 +38,18 @@ function Header() {
 
           {/* Site navigation */}
           <nav className="flex flex-grow">
-            <ul className="flex flex-grow justify-end flex-wrap items-center">
+            <ul className="flex flex-wrap items-center justify-end flex-grow">
               {/* <li>
-                <Link to="/signin" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Sign in</Link>
+                <Link to="/signin" className="flex items-center px-5 py-3 font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900">Sign in</Link>
               </li> */}
               <li>
                 <Link
                   to="/signup"
-                  className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3"
+                  className="ml-3 text-gray-200 bg-gray-900 btn-sm hover:bg-gray-800"
                 >
                   <span>Contact Us</span>
                   <svg
-                    className="w-3 h-3 fill-current text-gray-400 flex-shrink-0 ml-2 -mr-1"
+                    className="flex-shrink-0 w-3 h-3 ml-2 -mr-1 text-gray-400 fill-current"
                     viewBox="0 0 12 12"
                     xmlns="http://www.w3.org/2000/svg"
                   >

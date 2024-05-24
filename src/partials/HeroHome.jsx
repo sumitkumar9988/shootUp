@@ -10,7 +10,7 @@ function HeroHome() {
     <section className="relative">
       {/* Illustration behind hero content */}
       <div
-        className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
+        className="absolute bottom-0 transform -translate-x-1/2 pointer-events-none left-1/2"
         aria-hidden="true"
       >
         <svg
@@ -39,28 +39,29 @@ function HeroHome() {
         </svg>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 py-8 lg:py-16 sm:px-6">
+      <div className="max-w-6xl px-4 py-8 mx-auto lg:py-16 sm:px-6">
         {/* Hero content */}
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Section header */}
-          <div className="text-center pb-12 md:pb-16">
+          <div className="pb-12 text-center md:pb-16">
             <h1
-              className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
+              className="mb-4 text-5xl font-extrabold tracking-tighter md:text-6xl leading-tighter"
               data-aos="zoom-y-out"
             >
-              We'll help you sell your{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
-                products
+              AI-Powered Chatbot for{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400">
+                Pathology Labs
               </span>
             </h1>
             <div className="max-w-3xl mx-auto">
               <p
-                className="text-xl text-gray-600 mb-8"
+                className="mb-8 text-xl text-gray-600"
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                We help brands and businesses grow by finding new affiliate
-                partners and boosting demand for your products.
+                We Revolutionize Pathology Care with AI-Driven Precision and
+                Convenience, Enhancing Patient Experience and Expanding Customer
+                Reach
               </p>
               <div
                 className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
@@ -69,14 +70,14 @@ function HeroHome() {
               >
                 <div>
                   <Link to="/signup" className="block" aria-label="Cruip">
-                    <p className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0">
-                      Start free trial
+                    <p className="w-full mb-4 text-white bg-blue-600 btn hover:bg-blue-700 sm:w-auto sm:mb-0">
+                      Get Started
                     </p>
                   </Link>
                 </div>
                 <div>
                   <Link to="/signup" className="block" aria-label="Cruip">
-                    <p className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4">
+                    <p className="w-full text-white bg-gray-900 btn hover:bg-gray-800 sm:w-auto sm:ml-4">
                       Learn more
                     </p>
                   </Link>

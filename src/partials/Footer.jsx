@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../images/logo.png";
+import Logo from "../images/logo.jpg";
 
 function Footer() {
   return (
     <footer>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl px-4 mx-auto sm:px-6">
         {/* Top area: Blocks */}
-        <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12 border-t border-gray-200">
+        <div className="grid gap-8 py-8 border-t border-gray-200 sm:grid-cols-12 md:py-12">
           {/* 1st block */}
           <div className="sm:col-span-12 lg:col-span-3">
             <div className="mb-2">
@@ -25,14 +25,14 @@ function Footer() {
             <div className="text-sm text-gray-600">
               <Link
                 to="#"
-                className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out"
+                className="text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 hover:underline"
               >
                 Terms
               </Link>{" "}
               ·{" "}
               <Link
                 to="#"
-                className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out"
+                className="text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 hover:underline"
               >
                 Privacy Policy
               </Link>
@@ -41,12 +41,12 @@ function Footer() {
 
           {/* 2nd block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-medium mb-2">Products</h6>
+            <h6 className="mb-2 font-medium text-gray-800">Products</h6>
             <ul className="text-sm">
               <li className="mb-2">
                 <Link
                   to="#"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                  className="text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                 >
                   Integrations
                 </Link>
@@ -56,12 +56,12 @@ function Footer() {
 
           {/* 3rd block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-medium mb-2">Resources</h6>
+            <h6 className="mb-2 font-medium text-gray-800">Resources</h6>
             <ul className="text-sm">
               <li className="mb-2">
                 <Link
                   to="#"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                  className="text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                 >
                   Blog
                 </Link>
@@ -70,7 +70,7 @@ function Footer() {
               <li className="mb-2">
                 <Link
                   to="#"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                  className="text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                 >
                   Partners
                 </Link>
@@ -80,12 +80,12 @@ function Footer() {
 
           {/* 4th block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-medium mb-2">Company</h6>
+            <h6 className="mb-2 font-medium text-gray-800">Company</h6>
             <ul className="text-sm">
               <li className="mb-2">
                 <Link
                   to="#"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                  className="text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                 >
                   Home
                 </Link>
@@ -93,7 +93,7 @@ function Footer() {
               <li className="mb-2">
                 <Link
                   to="#"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                  className="text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                 >
                   About us
                 </Link>
@@ -102,7 +102,7 @@ function Footer() {
               <li className="mb-2">
                 <Link
                   to="#"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                  className="text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                 >
                   Privacy Policy
                 </Link>
@@ -112,8 +112,8 @@ function Footer() {
 
           {/* 5th block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-3">
-            <h6 className="text-gray-800 font-medium mb-2">Subscribe</h6>
-            <p className="text-sm text-gray-600 mb-4">
+            <h6 className="mb-2 font-medium text-gray-800">Subscribe</h6>
+            <p className="mb-4 text-sm text-gray-600">
               Get the latest news and articles to your inbox every month.
             </p>
             <form>
@@ -126,7 +126,7 @@ function Footer() {
                     <input
                       id="newsletter"
                       type="email"
-                      className="form-input w-full text-gray-800 px-3 py-2 pr-12 text-sm"
+                      className="w-full px-3 py-2 pr-12 text-sm text-gray-800 form-input"
                       placeholder="Your email"
                       required
                     />
@@ -136,11 +136,11 @@ function Footer() {
                       aria-label="Subscribe"
                     >
                       <span
-                        className="absolute inset-0 right-auto w-px -ml-px my-2 bg-gray-300"
+                        className="absolute inset-0 right-auto w-px my-2 -ml-px bg-gray-300"
                         aria-hidden="true"
                       ></span>
                       <svg
-                        className="w-3 h-3 fill-current text-blue-600 mx-3 flex-shrink-0"
+                        className="flex-shrink-0 w-3 h-3 mx-3 text-blue-600 fill-current"
                         viewBox="0 0 12 12"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -152,7 +152,7 @@ function Footer() {
                     </button>
                   </div>
                   {/* Success message */}
-                  {/* <p className="mt-2 text-green-600 text-sm">Thanks for subscribing!</p> */}
+                  {/* <p className="mt-2 text-sm text-green-600">Thanks for subscribing!</p> */}
                 </div>
               </div>
             </form>
@@ -160,13 +160,13 @@ function Footer() {
         </div>
 
         {/* Bottom area */}
-        <div className="md:flex md:items-center md:justify-between py-4 md:py-8 border-t border-gray-200">
+        <div className="py-4 border-t border-gray-200 md:flex md:items-center md:justify-between md:py-8">
           {/* Social links */}
           <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
             <li>
               <Link
                 to="#"
-                className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="flex items-center justify-center text-gray-600 transition duration-150 ease-in-out bg-white rounded-full shadow hover:text-gray-900 hover:bg-white-100"
                 aria-label="Twitter"
               >
                 <svg
@@ -181,7 +181,7 @@ function Footer() {
             {/* <li className="ml-4">
               <Link
                 to="#"
-                className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="flex items-center justify-center text-gray-600 transition duration-150 ease-in-out bg-white rounded-full shadow hover:text-gray-900 hover:bg-white-100"
                 aria-label="Github"
               >
                 <svg
@@ -196,7 +196,7 @@ function Footer() {
             <li className="ml-4">
               <Link
                 to="#"
-                className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="flex items-center justify-center text-gray-600 transition duration-150 ease-in-out bg-white rounded-full shadow hover:text-gray-900 hover:bg-white-100"
                 aria-label="Facebook"
               >
                 <svg
@@ -211,7 +211,7 @@ function Footer() {
           </ul>
 
           {/* Copyrights note */}
-          <div className="text-sm text-gray-600 mr-4">© 2022 shootUp.</div>
+          <div className="mr-4 text-sm text-gray-600">© 2024 PathLab.</div>
         </div>
       </div>
     </footer>

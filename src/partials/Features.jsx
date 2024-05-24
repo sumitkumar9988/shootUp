@@ -30,17 +30,21 @@ function Features() {
     <section className="relative">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
 
-      <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
+      <div className="absolute left-0 right-0 w-px h-20 p-px m-auto transform -translate-y-1/2 bg-gray-200"></div>
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="relative max-w-6xl px-4 mx-auto sm:px-6">
         <div className="pt-12 md:pt-20">
           {/* Section header */}
-          <div className="max-w-4xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Get discovered</h1>
+          <div className="max-w-4xl pb-12 mx-auto text-center md:pb-16">
+            <h1 className="mb-4 h2">Always Available, Always Accurate</h1>
             <p className="text-xl text-gray-600">
-              Find best way to Grow your demand for your products. We help Brand
-              to grow through finding affiliate partner and provide them lead of
-              our proven products.
+              In the fast-paced world of healthcare, your questions about
+              pathology tests shouldn't have to wait. Our AI-powered chatbot is
+              here to provide you with reliable information on test procedures
+              and availability, any time of the day. Powered by sophisticated
+              AI, it understands your needs, guides you through test selection
+              based on symptoms or doctor’s prescriptions, and manages your
+              bookings and queries effortlessly.
             </p>
           </div>
 
@@ -48,11 +52,11 @@ function Features() {
           <div className="md:grid md:grid-cols-12 md:gap-6">
             {/* Content */}
             <div
-              className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6"
+              className="max-w-xl mx-auto md:max-w-none md:w-full md:col-span-7 lg:col-span-6 md:mt-6"
               data-aos="fade-right"
             >
-              <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-20">
-                <h3 className="h3 mb-3">Powerful tool for you </h3>
+              <div className="mb-20 md:pr-4 lg:pr-12 xl:pr-16">
+                <h3 className="mb-3 h3">Powerful tool for you </h3>
               </div>
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
@@ -69,15 +73,17 @@ function Features() {
                   }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">
-                      Easy to setup
+                    <div className="mb-1 font-bold leading-snug tracking-tight">
+                      24/7 Query Handling
                     </div>
                     <div className="text-gray-600">
-                      We're building a easy to setup plug and play tool for
-                      affiliate marketing.
+                      Our chatbot is ready to assist you day and night, ensuring
+                      you always have support at your fingertips. Whether you
+                      need test details or have questions about our services,
+                      we’re just a message away.
                     </div>
                   </div>
-                  <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
+                  <div className="flex items-center justify-center flex-shrink-0 w-8 h-8 ml-3 bg-white rounded-full shadow">
                     <svg
                       className="w-3 h-3 fill-current"
                       viewBox="0 0 12 12"
@@ -100,14 +106,16 @@ function Features() {
                   }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">
-                      Easy to partner
+                    <div className="mb-1 font-bold leading-snug tracking-tight">
+                      Seamless Booking and Scheduling
                     </div>
                     <div className="text-gray-600">
-                      We want to make it easy for you to find your next partner.
+                      Schedule test bookings and home sample collections
+                      directly through WhatsApp. Our chatbot handles all the
+                      arrangements, so you can focus on your health.{" "}
                     </div>
                   </div>
-                  <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
+                  <div className="flex items-center justify-center flex-shrink-0 w-8 h-8 ml-3 bg-white rounded-full shadow">
                     <svg
                       className="w-3 h-3 fill-current"
                       viewBox="0 0 12 12"
@@ -133,15 +141,17 @@ function Features() {
                   }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">
-                      Easy to scale
+                    <div className="mb-1 font-bold leading-snug tracking-tight">
+                      Integrated Payment Processing
                     </div>
                     <div className="text-gray-600">
-                      We need to build a tool that is easy to scale and doesn't
-                      require any manual work.
+                      Complete your payments safely and conveniently through
+                      integrated solutions. Our chatbot provides secure
+                      transaction processes, so you can pay for your tests with
+                      peace of mind.
                     </div>
                   </div>
-                  <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
+                  <div className="flex items-center justify-center flex-shrink-0 w-8 h-8 ml-3 bg-white rounded-full shadow">
                     <svg
                       className="w-3 h-3 fill-current"
                       viewBox="0 0 12 12"
@@ -160,7 +170,7 @@ function Features() {
 
             {/* Tabs items */}
             <div
-              className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 pt-20 md:pt-40  md:mb-0 md:order-1"
+              className="max-w-xl pt-20 mx-auto mb-8 md:max-w-none md:w-full md:col-span-5 lg:col-span-6 md:pt-40 md:mb-0 md:order-1"
               data-aos="zoom-y-out"
               ref={tabs}
             >
@@ -179,8 +189,8 @@ function Features() {
                 >
                   <div className="relative inline-flex flex-col">
                     <img
-                      className="md:max-w-none mx-auto rounded"
-                      src={Image1}
+                      className="mx-auto rounded md:max-w-none"
+                      src={Image3}
                       width="500"
                       height="462"
                       alt="Features bg"
@@ -201,8 +211,8 @@ function Features() {
                 >
                   <div className="relative inline-flex flex-col">
                     <img
-                      className="md:max-w-none mx-auto rounded"
-                      src={Image3}
+                      className="mx-auto rounded md:max-w-none"
+                      src={Image1}
                       width="500"
                       height="462"
                       alt="Features bg"
@@ -223,7 +233,7 @@ function Features() {
                 >
                   <div className="relative inline-flex flex-col">
                     <img
-                      className="md:max-w-none mx-auto rounded md:pt-20"
+                      className="mx-auto rounded md:max-w-none md:pt-20"
                       src={Image4}
                       width="500"
                       height="462"
